@@ -1,0 +1,30 @@
+<div class="col-lg-6 offset-lg-3 col-md-6 offset-3 col-sm-12 col-xs-12 mt-5 pt-5">
+<h2>Registrarse</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="form-group mb-3">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control input-sm" %>
+  </div>
+
+  <div class="form-group mb-3">
+    <%= f.label "Contraseña" %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> caracteres mínimo)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", class:"form-control input-sm" %>
+  </div>
+
+  <div class="form-group mb-3">
+    <%= f.label "Repita su Contraseña" %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control input-sm" %>
+  </div>
+
+  <div class="form-group mb-3">
+    <%= f.submit "Enviar", class:"btn btn-primary btn-sm" %>
+    <%= render "devise/shared/links" %>
+  </div>
+<% end %>
+</div>

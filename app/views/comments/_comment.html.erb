@@ -1,0 +1,10 @@
+<p>
+  <%= comment.content %> - <%= comment.user.name %>
+  
+  <% if can? :destroy, comment %>  <!-- Cambiado a 'comment', no 'Comment' -->
+    <%= form_with(model: comment, url: [comment.post, comment], method: :delete) do |form| %>
+      <%= form.submit 'Eliminar', class: 'btn btn-danger btn-xs', data: { confirm: '¿Estás seguro de que deseas eliminar este comentario?' } %>
+    <% end %>
+  <% end %>
+</p>
+ 
