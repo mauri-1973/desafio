@@ -121,3 +121,9 @@ end
 <% if can? :create, Post %>
   <%= link_to 'New Post', new_post_path %>
 <% end %>
+Vista Usuario Administrador, quien puede ver, agregar publicaciones, agregar y eliminar comentarios, dar like
+<image src="/imagenes/1.jpeg" alt="Descripción de la imagen">
+Vista Usuario Registrado, quien puede ver publicaciones, agregar  comentarios, dar like
+<image src="/imagenes/3.jpeg" alt="Descripción de la imagen">
+Vista Usuario sin registrarse, quien puede ver publicaciones
+<image src="/imagenes/2,jpeg" alt="Descripción de la imagen">
