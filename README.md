@@ -126,4 +126,4 @@ Vista Usuario Administrador, quien puede ver, agregar publicaciones, agregar y e
 Vista Usuario Registrado, quien puede ver publicaciones, agregar  comentarios, dar like
 <image src="/imagenes/3.jpeg" alt="Descripción de la imagen">
 Vista Usuario sin registrarse, quien puede ver publicaciones
-<image src="/imagenes/2,jpeg" alt="Descripción de la imagen">
+<image src="/imagenes/2.jpeg" alt="Descripción de la imagen">
